@@ -25,6 +25,84 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+
+
+                        <li>
+                            <div class="dropdown">
+                                <button type="button"
+                                        class="btn btn-primary dropdown-toggle" 
+                                        data-bs-toggle="dropdown"> Localization
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+
+                                        <a
+                                        asp-controller="Home"
+                                        asp-action="ChangeLanguage"
+                                        asp-route-culture="en-US" 
+                                        class="dropdown-item">
+                                        <i class="flag-icon flag-icon-gb"></i> English 
+                                      
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Home"
+                                        asp-action="ChangeLanguage" 
+                                        asp-route-culture="fr-FR"
+                                        class="dropdown-item">
+                                            <i class="flag-icon flag-icon-gb"></i> French
+                                        </a>
+                                        <a
+                                         
+                                          asp-controller="Home" 
+                                          asp-action="ChangeLanguage" 
+                                          asp-route-culture="tr-TR"
+                                          class="dropdown-item">
+                                            
+                                            <i class="flag-icon flag-icon-gb"></i> Türkish
+                                          </a>
+                                    </li>
+
+                                    <li>
+
+                                        <a asp-controller="Home"
+                                           asp-action="ChangeLanguage"
+                                           asp-route-culture="az-AZ"
+                                           class="dropdown-item">
+                                            <i class="flag-icon flag-icon-gb"></i> Azerbaijan
+
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </ul>
                 </div>
             </div>
